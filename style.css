@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.landing {
+  min-height: 100vh;
+  background: white;
+  background-size: cover;
+  padding: 0rem 5rem;
+}
+
+.landing nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+}
+
+.landing nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.landing nav .nav-links li {
+  padding-left: 5rem;
+  font-size: 1.2rem;
+}
+
+.landing nav .nav-links li:hover {
+  color: #008c93;
+}
+
+.landing nav .nav-links .primary-btn {
+  padding: 20px 40px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  background: #dec494;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.landing nav .nav-links .primary-btn:hover {
+  background: #008c93;
+}
+
+.landing nav .nav-links .nav-btn {
+  margin-left: 5rem;
+}
+
+.landing nav #logo {
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.big-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  font-size: 5rem;
+  font-family: "Lobster", cursive;
+  color: #3d3d3d;
+}
+
+.intro {
+  background: #008c93;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.intro .intro-text {
+  color: #e9e9e9;
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.intro .intro-text .hide {
+  background: #008c93;
+  overflow: hidden;
+}
+
+.intro .intro-text .hide span {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  display: inline-block;
+}
+
+.slider {
+  background: #dec494;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+/*# sourceMappingURL=style.css.map */
