@@ -1,0 +1,102 @@
+@import "./variables";
+
+#footer-section {
+  background: $fontColor;
+  height: 30vh;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+
+    .footer-text-up {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+
+      .footer-company {
+        width: 200px;
+        h3 {
+          color: white;
+          font-size: 30px;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: white;
+        }
+
+        button {
+          color: white;
+          text-transform: uppercase;
+          padding: 15px 20px;
+          background: $primaryColor;
+          margin-top: 20px;
+          border: none;
+          border-radius: 2px;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+        }
+      }
+
+      .footer-site {
+        .footer-title {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .footer-text {
+          color: white;
+        }
+      }
+
+      .footer-address {
+        .footer-title {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .footer-text {
+          color: white;
+        }
+      }
+
+      .footer-contact {
+        .footer-title {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .footer-text {
+          color: white;
+        }
+      }
+
+      .footer-links {
+        .footer-title {
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+
+        .footer-text {
+          color: white;
+        }
+      }
+    }
+
+    .footer-text-down {
+      color: white;
+    }
+  }
+}

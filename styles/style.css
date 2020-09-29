@@ -273,6 +273,113 @@
   background: #008c93;
 }
 
+#footer-section {
+  background: #010014;
+  height: 30vh;
+}
+
+#footer-section .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+}
+
+#footer-section .footer-container .footer-text-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+#footer-section .footer-container .footer-text-up .footer-company {
+  width: 200px;
+}
+
+#footer-section .footer-container .footer-text-up .footer-company h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#footer-section .footer-container .footer-text-up .footer-company p {
+  color: white;
+}
+
+#footer-section .footer-container .footer-text-up .footer-company button {
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  background: #008c93;
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#footer-section .footer-container .footer-text-up .footer-site .footer-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#footer-section .footer-container .footer-text-up .footer-site .footer-text {
+  color: white;
+}
+
+#footer-section .footer-container .footer-text-up .footer-address .footer-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#footer-section .footer-container .footer-text-up .footer-address .footer-text {
+  color: white;
+}
+
+#footer-section .footer-container .footer-text-up .footer-contact .footer-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#footer-section .footer-container .footer-text-up .footer-contact .footer-text {
+  color: white;
+}
+
+#footer-section .footer-container .footer-text-up .footer-links .footer-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#footer-section .footer-container .footer-text-up .footer-links .footer-text {
+  color: white;
+}
+
+#footer-section .footer-container .footer-text-down {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
