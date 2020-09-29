@@ -1,0 +1,46 @@
+@import "./variables";
+
+#missions-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+
+  .missions-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+
+    .single-mission-card {
+      height: 350px;
+      width: 350px;
+      border: 20px solid $secondaryColor;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .mission-title {
+        width: 80%;
+        font-size: 25px;
+        font-weight: 600;
+        font-family: "Montserrat", sans-serif;
+        color: $primaryColor;
+        margin-bottom: 15px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .mission-text {
+        font-family: "Lato", sans-serif;
+        text-align: center;
+        width: 80%;
+      }
+    }
+
+    .first-row {
+      margin-bottom: 50px;
+    }
+  }
+}

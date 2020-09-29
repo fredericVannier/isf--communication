@@ -1,17 +1,21 @@
 @import "./variables";
+@import "./about";
+@import "./missions";
+@import "./form";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  outline:none;
 }
 
 main {
-  font-family: "Lato", sans-serif;
   color: $fontColor;
 }
 
-.landing {
+#landing {
   min-height: 100vh;
   background: white;
   background-size: cover;
@@ -114,8 +118,10 @@ main {
   transform: translateY(100%);
 }
 
-.main-section {
+#main-section {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
 
   .left-content {
     display: flex;

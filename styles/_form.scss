@@ -1,0 +1,74 @@
+@import "./variables";
+
+.contact-section {
+  height: 80vh;
+
+  .contact-container {
+    display: flex;
+    height: 80vh;
+
+    .image-contact {
+      height: 100%;
+      width: 100%;
+      background: url("../images/isf-bureau.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .contact-form {
+      height: 100%;
+      width: 100%;
+      background: $secondaryColor;
+      display: flex;
+      align-items: center;
+
+      form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        label {
+          font-family: "Lato", sans-serif;
+          margin-bottom: 15px;
+          font-weight: 700;
+          font-size: 20px;
+          color: white;
+        }
+
+        input {
+          border: none;
+          border-bottom: 2px solid white;
+          background-color: $secondaryColor;
+          margin-bottom: 40px;
+          color: white;
+
+          &::placeholder {
+            color: white;
+            font-family: "Montserrat", sans-serif;
+          }
+        }
+
+        .input-message {
+          height: 180px;
+        }
+
+        button {
+          text-transform: uppercase;
+          color: $secondaryColor;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          border: none;
+          border-radius: 2px;
+          width: 180px;
+          margin: 0 auto;
+        }
+
+        .form-btn {
+          padding: 15px 30px;
+          background-color: white;
+        }
+      }
+    }
+  }
+}
