@@ -21,6 +21,18 @@
       background: $secondaryColor;
       display: flex;
       align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .contact-title-container {
+        .contact-title {
+          font-family: "Montserrat", sans-serif;
+          font-size: 35px;
+          font-weight: 900;
+          top: 50px;
+          left: 50px;
+        }
+      }
 
       form {
         margin: 0 auto;

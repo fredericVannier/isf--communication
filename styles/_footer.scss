@@ -52,6 +52,10 @@
 
         .footer-text {
           color: white;
+
+          &:hover{
+            color: $secondaryColor;
+          }
         }
       }
 
@@ -91,6 +95,10 @@
 
         .footer-text {
           color: white;
+
+          &:hover{
+            color: $secondaryColor;
+          }
         }
       }
     }

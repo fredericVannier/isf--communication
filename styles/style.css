@@ -122,6 +122,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#missions-section .missions-title-container .form-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  margin-top: 30px;
 }
 
 #missions-section .missions-container {
@@ -140,7 +154,13 @@
 #missions-section .missions-container .single-mission-card {
   height: 350px;
   width: 350px;
-  border: 20px solid #dec494;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: 10px 10px 31px -26px rgba(0, 5, 26, 0.61);
+          box-shadow: 10px 10px 31px -26px rgba(0, 5, 26, 0.61);
+  border: 1px solid #dec494;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +174,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#missions-section .missions-container .single-mission-card:hover {
+  border: 1px solid #008c93;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#missions-section .missions-container .single-mission-card:hover > .mission-title {
+  color: #dec494;
 }
 
 #missions-section .missions-container .single-mission-card .mission-title {
@@ -206,6 +236,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#contact-section .contact-container .contact-form .contact-title-container .contact-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-weight: 900;
+  top: 50px;
+  left: 50px;
 }
 
 #contact-section .contact-container .contact-form form {
@@ -432,6 +477,10 @@
   color: white;
 }
 
+#footer-section .footer-container .footer-text-up .footer-site .footer-text:hover {
+  color: #dec494;
+}
+
 #footer-section .footer-container .footer-text-up .footer-address .footer-title {
   color: white;
   font-size: 18px;
@@ -463,6 +512,10 @@
 
 #footer-section .footer-container .footer-text-up .footer-links .footer-text {
   color: white;
+}
+
+#footer-section .footer-container .footer-text-up .footer-links .footer-text:hover {
+  color: #dec494;
 }
 
 #footer-section .footer-container .footer-text-down {
@@ -554,7 +607,7 @@ main {
   -webkit-transform: translate(-50%, -30%);
           transform: translate(-50%, -30%);
   font-size: 5rem;
-  font-family: "Lobster", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #3d3d3d;
 }
 
@@ -578,9 +631,12 @@ main {
 
 .intro .intro-text {
   color: #e9e9e9;
+}
+
+.intro .intro-text .text {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .intro .intro-text .hide {
@@ -632,10 +688,15 @@ main {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 3.5rem;
+  margin-top: 50px;
+  -webkit-animation: apparition 0.8s ease-out 2.55s;
+          animation: apparition 0.8s ease-out 2.55s;
 }
 
 #main-section .left-content .home-text {
   font-size: 22px;
+  -webkit-animation: apparitionBis 1s ease-out 2.55s;
+          animation: apparitionBis 1s ease-out 2.55s;
 }
 
 #main-section .left-content .primary-btn {
@@ -655,5 +716,57 @@ main {
 
 #main-section .left-content .home-text-btn {
   margin-top: 30px;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes apparitionBis {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes apparitionBis {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
