@@ -1,0 +1,69 @@
+@import "./variables";
+
+#newsletter-section {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .news-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .news-text-container {
+      .news-text {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 50px;
+      }
+    }
+
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-family: "Lato", sans-serif;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 20px;
+          }
+  
+          input {
+              width: 250px;
+            border: none;
+            border-bottom: 2px solid $fontColor;
+            color: $fontColor;
+          }
+  
+      }
+
+      button {
+        text-transform: uppercase;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        border: none;
+        border-radius: 2px;
+        width: 180px;
+
+        &:hover{
+            background: $secondaryColor;
+        }
+      }
+
+      .form-btn {
+        padding: 15px 30px;
+        background: $primaryColor;
+      }
+    }
+  }
+}

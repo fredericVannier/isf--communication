@@ -88,18 +88,18 @@
   margin-bottom: 50px;
 }
 
-.contact-section {
+#contact-section {
   height: 80vh;
 }
 
-.contact-section .contact-container {
+#contact-section .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80vh;
 }
 
-.contact-section .contact-container .image-contact {
+#contact-section .contact-container .image-contact {
   height: 100%;
   width: 100%;
   background: url("../images/isf-bureau.jpg");
@@ -107,7 +107,7 @@
   background-size: cover;
 }
 
-.contact-section .contact-container .contact-form {
+#contact-section .contact-container .contact-form {
   height: 100%;
   width: 100%;
   background: #dec494;
@@ -119,7 +119,7 @@
           align-items: center;
 }
 
-.contact-section .contact-container .contact-form form {
+#contact-section .contact-container .contact-form form {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +131,7 @@
   width: 70%;
 }
 
-.contact-section .contact-container .contact-form form label {
+#contact-section .contact-container .contact-form form label {
   font-family: "Lato", sans-serif;
   margin-bottom: 15px;
   font-weight: 700;
@@ -139,7 +139,7 @@
   color: white;
 }
 
-.contact-section .contact-container .contact-form form input {
+#contact-section .contact-container .contact-form form input {
   border: none;
   border-bottom: 2px solid white;
   background-color: #dec494;
@@ -147,31 +147,31 @@
   color: white;
 }
 
-.contact-section .contact-container .contact-form form input::-webkit-input-placeholder {
+#contact-section .contact-container .contact-form form input::-webkit-input-placeholder {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-section .contact-container .contact-form form input:-ms-input-placeholder {
+#contact-section .contact-container .contact-form form input:-ms-input-placeholder {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-section .contact-container .contact-form form input::-ms-input-placeholder {
+#contact-section .contact-container .contact-form form input::-ms-input-placeholder {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-section .contact-container .contact-form form input::placeholder {
+#contact-section .contact-container .contact-form form input::placeholder {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-section .contact-container .contact-form form .input-message {
+#contact-section .contact-container .contact-form form .input-message {
   height: 180px;
 }
 
-.contact-section .contact-container .contact-form form button {
+#contact-section .contact-container .contact-form form button {
   text-transform: uppercase;
   color: #dec494;
   font-family: "Montserrat", sans-serif;
@@ -182,9 +182,95 @@
   margin: 0 auto;
 }
 
-.contact-section .contact-container .contact-form form .form-btn {
+#contact-section .contact-container .contact-form form .form-btn {
   padding: 15px 30px;
   background-color: white;
+}
+
+#newsletter-section {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#newsletter-section .news-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#newsletter-section .news-container .news-text-container .news-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+
+#newsletter-section .news-container .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#newsletter-section .news-container .form-container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#newsletter-section .news-container .form-container form label {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#newsletter-section .news-container .form-container form input {
+  width: 250px;
+  border: none;
+  border-bottom: 2px solid #010014;
+  color: #010014;
+}
+
+#newsletter-section .news-container .form-container button {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  width: 180px;
+}
+
+#newsletter-section .news-container .form-container button:hover {
+  background: #dec494;
+}
+
+#newsletter-section .news-container .form-container .form-btn {
+  padding: 15px 30px;
+  background: #008c93;
 }
 
 * {
@@ -194,6 +280,7 @@
           box-sizing: border-box;
   font-family: "Lato", sans-serif;
   outline: none;
+  color: #010014;
 }
 
 main {
